@@ -11,15 +11,15 @@ func quicksort(nums []int, low, high int) {
     }
 }
 
-func partition(nums []int, low, hi int) int {
-    initial := nums[hi]
+func partition(nums []int, low, high int) int {
+    initial := nums[high]
     i := low
-    for j := low; j < hi; j++ {
+    for j := low; j < high; j++ {
         if nums[j] < initial {
             nums[i], nums[j] = nums[j], nums[i]
             i++
         }
     }
-    nums[i], nums[hi] = nums[hi], nums[i]
+    nums[i], nums[high] = nums[high], nums[i]
     return i
 }
