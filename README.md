@@ -112,3 +112,4 @@ so for example:
      Output: "LVIII" 
      
      Explanation: L = 50, V = 5, III = 3. 
+   - romanToInt is the reverse function that will take roman characters and map it to Integer/common numbers.
