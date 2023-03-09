@@ -89,3 +89,26 @@ so for example:
   - The twoSum function takes an integer slice array and a target integer target as its input, and returns a slice of two integers that represent the indices of the two numbers in the input array that add up to the target value. If there are no such indices, an empty slice is returned. 
   - The function uses a hash map called seenNums to keep track of the numbers it has already seen while iterating through the array. In each iteration, it calculates the difference between the target value and the current number in the array and checks whether the difference is already in the hash map. If it is, the function returns a slice with the current index i and the index of the difference j that was previously stored in the hash map. If the difference is not in the hash map, the function stores the current number and its index in the hash map. 
   - seenNums map stores the numbers in the input array as keys and their corresponding indices as values. The syntax j, ok := seenNums[potentialMatch] will simultaneously checks whether the value exists in the map and retrieves its value. The value of found will be true if potentialMatch is a key in the seenNums map, and false otherwise. The value of j will be the value associated with the key potentialMatch if it exists in the map, and the zero value for its type otherwise. 
+  
+ 5. [intToRoman_romanToInt.go](hhttps://github.com/bryanoliverh/CodePractice-Golang/blob/main/intToRoman_romanToInt.go)
+   -  Time Complexity: O(n)
+   
+      Space Complexity: O(1)
+  - Given an integer, convert it to a roman numeral. 
+  - **Input and Output Examples:**
+  
+     Example 1: 
+     
+     Input: num = 3 
+     
+     Output: "III" 
+     
+     Explanation: 3 is represented as 3 ones. 
+
+     Example 2: 
+     
+     Input: num = 58 
+     
+     Output: "LVIII" 
+     
+     Explanation: L = 50, V = 5, III = 3. 
