@@ -6,7 +6,7 @@ for i, num := range array {
 
 potentialMatch := target - num 
 
-if j, found := seenNums[potentialMatch]; found { 
+if j, ok := seenNums[potentialMatch]; ok { 
 
 return []int{i, j} 
 
