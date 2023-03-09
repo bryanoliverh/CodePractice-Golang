@@ -1,4 +1,4 @@
-# List of some of my LeetCode practice codes!
+# List of some of my LeetCode, HackerRank, and other practice codes!
 
 ***1. [isPalindrome.go](https://github.com/bryanoliverh/LeetCode-Practice-Golang/blob/main/sortArray.go)***
 
