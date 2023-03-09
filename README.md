@@ -40,8 +40,12 @@
   - The function isPalindrome takes an integer x as input and it will return a boolean which indicates whether x is a palindrome or not. A palindrome is a number that reads the same backward as forward.
 so for example:
 
-  - Input: x = 121
+  - **Input and Output Examples:**
+    
+    Input: x = 121
+    
     Output: true
+    
     Explanation: 121 reads as 121 from left to right and from right to left.
 
   - The function first checks if x is negative or ends with a zero, except when x is zero itself. If either condition is true, the function immediately returns false because such numbers cannot be palindromes.
@@ -67,3 +71,20 @@ so for example:
 
  - Another function is the partition function which is used to do the partition of the input slice of integers nums. It will choose the last element in the slice as the initial element that will be use as the pivot, and iterates over the slice from low to high-1. If an element is less than the initial element, it swaps it with the current index i, and increments i. Finally, it swaps the pivot element with the element at index i and returns i.
 
+4. [twoSum.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/twoSum.go)
+
+  - Time Complexity: O(n)
+   
+    Space Complexity: O(n)
+  - Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.  You may assume that each input would have exactly one solution, and you may not use the same element twice. 
+  - **Input and Output Examples:**
+    
+    Example 1: 
+    
+    Input: nums = [2,7,11,15], target = 9 
+    
+    Output: [0,1] 
+    
+    Explanation: Because nums[0] + nums[1] == 9, we return [0, 1]. 
+  - The twoSum function takes an integer slice array and a target integer target as its input, and returns a slice of two integers that represent the indices of the two numbers in the input array that add up to the target value. If there are no such indices, an empty slice is returned. 
+  - The function uses a hash map called seenNums to keep track of the numbers it has already seen while iterating through the array. In each iteration, it calculates the difference between the target value and the current number in the array and checks whether the difference is already in the hash map. If it is, the function returns a slice with the current index i and the index of the difference j that was previously stored in the hash map. If the difference is not in the hash map, the function stores the current number and its index in the hash map. 
