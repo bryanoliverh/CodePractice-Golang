@@ -50,7 +50,8 @@ so for example:
 
   - The loop will continue as long as x is greater than rev, since the reversal of the first half of x is not complete until x becomes smaller than rev. If x and rev have an odd number of digits, the middle digit is ignored because it is the same in both numbers. After the loop completes, the function checks whether x is equal to rev or to rev/10 and the second case arises when x has an odd number of digits, and the middle digit has already been removed from rev.
   - If either of these conditions is true, the function returns true, indicating that x is a palindrome. Otherwise, it returns false.
-
+  - The expression x == reverse || x == reverse / 10 is checking whether the input integer x is a palindrome or not while at the end of the for loop, the variable reverse will contain the reverse of the first half of x. For example, if x is 1234321, then reverse will be 1234. Then it will compare the first half of x with the second half to check if it's a palindrome. If x has an odd number of digits, we can ignore the middle digit, which will be equal to itself. If x has an even number of digits, we need to compare the first half of x with the second half minus the last digit. For example, if x is 1221, then reverse will be 12, and we need to ignore the last digit in reverse. Therefore, the expression x == reverse / 10 checks if x is a palindrome when it has an even number of digits. The function returns true if x is a palindrome and false otherwise.
+  
 3. [sortArray.go](https://github.com/bryanoliverh/LeetCode-Practice-Golang/blob/main/sortArray.go)
   - Time Complexity: O(n log n)
     
