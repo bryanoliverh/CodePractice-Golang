@@ -13,6 +13,4 @@ for i, num := range array {
 
 return []int{} 
 
-} 
-
- 
+}
