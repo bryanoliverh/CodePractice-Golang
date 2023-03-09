@@ -1,21 +1,6 @@
 # List of some of my LeetCode practice codes!
 
-
-***1. sortArray.go***
-
-Sort Array Function in GO without built-in functions!
-
-
-The function takes 1 list input and returns the sorted list without any built in functions.
-
-Time Complexity: O(n log n)
-Space Complexity: O(n)
-
-The function implements quick sort algorithm which takes slice of integers with the variable name of nums, and the range of indices low and high which will be sorted. If low is less than high, the slice will be partitioned using the partition function, and recursively calls itself on the left and right sub-arrays.
-
-Another function is the partition function which is used to do the partition of the input slice of integers nums. It will choose the last element in the slice as the initial element that will be use as the pivot, and iterates over the slice from low to high-1. If an element is less than the initial element, it swaps it with the current index i, and increments i. Finally, it swaps the pivot element with the element at index i and returns i.
-
-***2. isPalindrome.go***
+***1. [isPalindrome.go](https://github.com/bryanoliverh/LeetCode-Practice-Golang/blob/main/sortArray.go)***
 
 The function isPalindrome takes an integer x as input and it will return a boolean which indicates whether x is a palindrome or not. A palindrome is a number that reads the same backward as forward.
 so for example:
@@ -33,3 +18,18 @@ The loop continues as long as x is greater than rev, since the reversal of the f
 After the loop completes, the function checks whether x is equal to rev or to rev/10. The second case arises when x has an odd number of digits, and the middle digit has already been removed from rev.
 
 If either of these conditions is true, the function returns true, indicating that x is a palindrome. Otherwise, it returns false.
+
+***2. [sortArray.go](https://github.com/bryanoliverh/LeetCode-Practice-Golang/blob/main/sortArray.go)***
+
+Sort Array Function in GO without built-in functions!
+
+
+The function takes 1 list input and returns the sorted list without any built in functions.
+
+Time Complexity: O(n log n)
+Space Complexity: O(n)
+
+The function implements quick sort algorithm which takes slice of integers with the variable name of nums, and the range of indices low and high which will be sorted. If low is less than high, the slice will be partitioned using the partition function, and recursively calls itself on the left and right sub-arrays.
+
+Another function is the partition function which is used to do the partition of the input slice of integers nums. It will choose the last element in the slice as the initial element that will be use as the pivot, and iterates over the slice from low to high-1. If an element is less than the initial element, it swaps it with the current index i, and increments i. Finally, it swaps the pivot element with the element at index i and returns i.
+
