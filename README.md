@@ -1,6 +1,39 @@
 # List of some of my LeetCode, HackerRank, and other practice codes!
 
-***1. [isPalindrome.go](https://github.com/bryanoliverh/LeetCode-Practice-Golang/blob/main/sortArray.go)***
+- *** [compress.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/compress.go)***
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+Example 1: 
+
+Input: chars = ["a","a","b","b","c","c","c"] 
+Output: Return 6, and the first 6 characters of the input array should be: ["a","2","b","2","c","3"] 
+Explanation: The groups are "aa", "bb", and "ccc". This compresses to "a2b2c3". 
+ 
+
+Example 2: 
+
+Input: chars = ["a"] 
+Output: Return 1, and the first character of the input array should be: ["a"] 
+Explanation: The only group is "a", which remains uncompressed since it's a single character. 
+ 
+
+Example 3: 
+
+Input: chars = ["a","b","b","b","b","b","b","b","b","b","b","b","b"] 
+Output: Return 4, and the first 4 characters of the input array should be: ["a","b","1","2"]. 
+Explanation: The groups are "a" and "bbbbbbbbbbbb". This compresses to "ab12". 
+
+It will first check if the length of chars is 0 or 1 and it will return 0 or 1 respectively, since there is no need to compress a sequence of 0 or 1 character.
+
+The function initializes comp variable to be the first character in chars, count to be 1, and compressIdx to be 0 and it will then enter a for loop that iterates over the characters in chars, starting from the second character. If the current character is the same as the previous one (comp), the function increments the count variable by 1.
+
+If the current character is different from the previous one, the function writes the previous character (comp) to the compressIdx position in chars and increments compressIdx by 1.If the count variable is greater than 1, it means there are repeated characters, so the function converts the count to a string using strconv.Itoa(count) and writes each digit of the count to the compressIdx position in chars, and increments compressIdx by the length of the count string.
+
+The function then updates comp to be the current character and resets count to 1. After the loop is finished, the function returns the value of compressIdx, which represents the length of the compressed sequence.
+
+- *** [isPalindrome.go](https://github.com/bryanoliverh/LeetCode-Practice-Golang/blob/main/sortArray.go)***
 
 Time Complexity: O(log(n))
 Space Complexity: O(n)
@@ -22,7 +55,7 @@ After the loop completes, the function checks whether x is equal to rev or to re
 
 If either of these conditions is true, the function returns true, indicating that x is a palindrome. Otherwise, it returns false.
 
-***2. [sortArray.go](https://github.com/bryanoliverh/LeetCode-Practice-Golang/blob/main/sortArray.go)***
+*** [sortArray.go](https://github.com/bryanoliverh/LeetCode-Practice-Golang/blob/main/sortArray.go)***
 
 Sort Array Function in GO without built-in functions!
 
