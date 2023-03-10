@@ -116,7 +116,7 @@ so for example:
    
    
 6. [threeSumClosest.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/threeSumClosest.go)
-   -  Time Complexity: O(n^2)
+  -  Time Complexity: O(n^2)
    
       Space Complexity: O(1)
       
