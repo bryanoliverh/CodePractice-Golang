@@ -42,6 +42,8 @@ so for example:
 
   - **Input and Output Examples:**
     
+    **Example 1:**
+    
     Input: x = 121
     
     Output: true
@@ -79,7 +81,7 @@ so for example:
   - Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.  You may assume that each input would have exactly one solution, and you may not use the same element twice. 
   - **Input and Output Examples:**
     
-    Example 1: 
+    **Example 1:**
     
     Input: nums = [2,7,11,15], target = 9 
     
@@ -97,7 +99,7 @@ so for example:
   - Given an integer, convert it to a roman numeral. 
   - **Input and Output Examples:**
   
-     Example 1: 
+     **Example 1:** 
      
      Input: num = 3 
      
@@ -105,7 +107,7 @@ so for example:
      
      Explanation: 3 is represented as 3 ones. 
 
-     Example 2: 
+     **Example 2:** 
      
      Input: num = 58 
      
@@ -133,3 +135,31 @@ so for example:
   - For each calculated sum, the function checks if it is closer to the target than the closest sum seen so far. If so, it updates the closest sum and the distance accordingly. 
 
   - Finally, the function returns the closest sum found. 
+  
+7. [mergeTwoList.go](  https://github.com/bryanoliverh/CodePractice-Golang/blob/main/mergeTwoList.go)
+  -  Time Complexity: O(m+n), where m and n are the lengths of list1 and list2 
+   
+      Space Complexity: O(1)
+      
+  - **Input and Output Examples:**
+  
+    **Example 1:** 
+    
+    Input: list1 = [1,2,4], list2 = [1,3,4]
+    
+    Output: [1,1,2,3,4,4]
+
+    **Example 2:**
+
+    Input: list1 = [], list2 = []
+    
+    Output: []
+  
+  
+  - The mergeTwoLists function takes in two singly-linked lists list1 and list2 and merges them into a new singly-linked list. To create the new list, a dummy node is created as a placeholder, and a pointer tail is set to it.
+
+  - Then, a loop is initiated to compare each node in both lists. If the value of the current node in list1 is less than or equal to the value of the current node in list2, the tail node's Next pointer is set to point to the current node in list1, and list1 moves on to the next node in the list. Otherwise, the tail node's Next pointer is set to point to the current node in list2, and list2 moves on to the next node in the list. The tail node is then moved to the next node in the new list.
+
+  - After the loop has completed, any remaining nodes in either list1 or list2 are added to the new list. If there are still nodes remaining in list1, the tail node's Next pointer is set to point to list1. If there are still nodes remaining in list2, the tail node's Next pointer is set to point to list2.
+
+  - Finally, the function returns the Next pointer of the dummy node. This is because the first node in the new list is the Next node of the dummy node, which was created only as a placeholder and has no other significance in the new list. By returning the Next pointer of the dummy node, we are effectively returning the first node of the new list.
