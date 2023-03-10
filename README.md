@@ -113,3 +113,23 @@ so for example:
      
      Explanation: L = 50, V = 5, III = 3. 
    - romanToInt is the reverse function that will take roman characters and map it to Integer/common numbers.
+   
+   
+6. [threeSumClosest.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/threeSumClosest.go)
+   -  Time Complexity: O(n^2)
+   
+      Space Complexity: O(1)
+      
+  - This function finds the closest sum of three numbers in the given input slice nums to a target number target. 
+  - The function starts by sorting the input slice. Then, it iterates over the first len(nums) - 2 elements of the sorted slice nums, while keeping track of the closest sum seen so far and the distance of the closest sum to the target. 
+
+  - For each element nums[i] in the outer loop, the function initializes two pointers left and right that point to the next and last elements, respectively. It then iterates over the slice from the left and right pointers until they meet. 
+
+ 
+ 
+
+  - At each iteration, the function calculates the sum of the three elements at indices i, left, and right. If this sum is less than the target, the left pointer is incremented, otherwise, the right pointer is decremented. If the sum equals the target, the function returns the target. 
+
+  - For each calculated sum, the function checks if it is closer to the target than the closest sum seen so far. If so, it updates the closest sum and the distance accordingly. 
+
+  - Finally, the function returns the closest sum found. 
