@@ -165,7 +165,7 @@ so for example:
   - Finally, the function returns the Next pointer of the dummy node. This is because the first node in the new list is the Next node of the dummy node, which was created only as a placeholder and has no other significance in the new list. By returning the Next pointer of the dummy node, we are effectively returning the first node of the new list.
 
 8. [removeDuplicates.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/removeDuplicates.go)
-  -  Time Complexity: O(n), where m and n are the lengths of list1 and list2 
+  -  Time Complexity: n log n (dominated by the sorting function)
    
      Space Complexity: O(1)
       
