@@ -170,7 +170,8 @@ so for example:
      Space Complexity: O(1)
       
   - **Input and Output Examples:**
-    Example 1:
+  - 
+    **Example 1:**
 
     Input: nums = [1,1,2]
     
@@ -180,7 +181,7 @@ so for example:
     It does not matter what you leave beyond the returned k (hence they are underscores).
     
     
-    Example 2:
+    **Example 2:**
 
     Input: nums = [0,0,1,1,1,2,2,3,3,4]
     
