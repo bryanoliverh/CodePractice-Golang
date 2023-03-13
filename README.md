@@ -170,7 +170,7 @@ so for example:
      Space Complexity: O(1)
       
   - **Input and Output Examples:**
-  - 
+  
     **Example 1:**
 
     Input: nums = [1,1,2]
