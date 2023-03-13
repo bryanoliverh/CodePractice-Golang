@@ -165,7 +165,7 @@ so for example:
   - Finally, the function returns the Next pointer of the dummy node. This is because the first node in the new list is the Next node of the dummy node, which was created only as a placeholder and has no other significance in the new list. By returning the Next pointer of the dummy node, we are effectively returning the first node of the new list.
 
 8. [removeDuplicates.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/removeDuplicates.go)
-  -  Time Complexity: n log n (dominated by the sorting function)
+  -  Time Complexity: O(n log n) which is dominated by the sorting function.
    
      Space Complexity: O(1)
       
@@ -191,3 +191,33 @@ so for example:
     
     It does not matter what you leave beyond the returned k (hence they are underscores).
 
+
+9. [lengthOfLastWord.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/lengthOfLastWord.go)
+  -  Time Complexity: O(n)
+   
+     Space Complexity: O(n)
+      
+  - **Input and Output Examples:**
+
+    **Example 1:**
+    
+    Input: s = "Hello World"
+    
+    Output: 5
+    
+    Explanation: The last word is "World" with length 5.
+    
+    **Example 2:**
+
+    Input: s = "   fly me   to   the moon  "
+    
+    Output: 4
+    
+    Explanation: The last word is "moon" with length 4.
+
+
+  - Given a string s consisting of words and spaces, return the length of the last word in the string.
+  
+  - A word is a maximal substring consisting of non-space characters only.
+  
+  - The function loops through each character in the input string and it will check if the character is a space (ASCII code 32). If it is a space, it means that it is going to be a new word and the new string will be emptied. Otherwise, the character is added to the current finStr variable.
