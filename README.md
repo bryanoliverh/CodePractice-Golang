@@ -163,3 +163,30 @@ so for example:
   - After the loop has completed, any remaining nodes in either list1 or list2 are added to the new list. If there are still nodes remaining in list1, the tail node's Next pointer is set to point to list1. If there are still nodes remaining in list2, the tail node's Next pointer is set to point to list2.
 
   - Finally, the function returns the Next pointer of the dummy node. This is because the first node in the new list is the Next node of the dummy node, which was created only as a placeholder and has no other significance in the new list. By returning the Next pointer of the dummy node, we are effectively returning the first node of the new list.
+
+8. [removeDuplicates.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/removeDuplicates.go)
+  -  Time Complexity: O(n), where m and n are the lengths of list1 and list2 
+   
+     Space Complexity: O(1)
+      
+  - **Input and Output Examples:**
+    Example 1:
+
+    Input: nums = [1,1,2]
+    
+    Output: 2, nums = [1,2,_]
+    
+    Explanation: Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.
+    It does not matter what you leave beyond the returned k (hence they are underscores).
+    
+    
+    Example 2:
+
+    Input: nums = [0,0,1,1,1,2,2,3,3,4]
+    
+    Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
+    
+    Explanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
+    
+    It does not matter what you leave beyond the returned k (hence they are underscores).
+
