@@ -15,10 +15,23 @@ func isPalindromeStr(str string) bool {
     }
     return true
 }
+func reverseString(str string) string {
+
+    var sb strings.Builder
+    for i := len(str) - 1; i >= 0; i-- {
+        if str[i] != ' ' {
+            sb.WriteByte(str[i])
+        }
+    }
+    return sb.String()
+}
+
 
 func main() {
     str1 := "A man a plan a canal Panama"
     // str2 := "not a not a not"
+	reversed := reverseString(str1)
+    fmt.Println("The reverse version of " + str1 + " is: " + reversed)
 
     if isPalindromeStr(str1) {
         fmt.Println(str1, "is a palindrome.")
