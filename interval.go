@@ -40,10 +40,10 @@ func max(a, b int) int {
 
 func main(){
 	intervals := []Interval{
-    {1, 5},
-    {3, 7},
-    {4, 6},
-    {6, 8},
+    {1, 10},
+    {2, 9},
+    {5, 11},
+    {3, 4},
 }
 	merger :=(mergeIntervals(intervals))
 
