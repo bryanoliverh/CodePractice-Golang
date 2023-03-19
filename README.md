@@ -236,7 +236,7 @@ so for example:
     Input: {1, 10}, {2, 9}, {5, 11}, {3, 4}
     
     Output: (1, 11)
- 10. [determineIdenticalBinaryTree.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/determineIdenticalBinaryTree.go)
+ 11. [determineIdenticalBinaryTree.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/determineIdenticalBinaryTree.go)
   -  The problem asks to determine if two binary trees are structurally identical, meaning they have the same shape and nodes with the same values.
   
   -  Compare each node of the two binary trees, starting from their roots and going down to their leaves. If the nodes being compared are equal, the function recursively calls itself on the left and right children of the nodes. If at any point during the recursion, two nodes being compared are not equal, the function returns false. If the function completes the recursion without returning false, it means that the two trees are identical, and the function returns true.
@@ -268,3 +268,26 @@ so for example:
     
     Output: The two binary trees are identical.
  
+  10. [isPalindromeStr.go]( https://github.com/bryanoliverh/CodePractice-Golang/blob/main/isPalindromeStr.go)
+  -  The task is to combine overlapping intervals in a given list to create a new list that contains only intervals that do not overlap with each other.
+
+  -  Time Complexity: O(n)
+   
+     Space Complexity: O(n)
+      
+  - **Input and Output Examples:**
+    
+    **Example 1:**
+    
+    Input: "A man a plan a canal Panama is a palindrome."
+    
+    Output: not a not a not is not a palindrome.
+    
+
+    **Example 2:**
+    
+    Input: "not a not a not"
+    
+    Output: not a not a not is not a palindrome.
+
+    
