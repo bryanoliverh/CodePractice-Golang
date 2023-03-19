@@ -223,6 +223,8 @@ so for example:
   - The function loops through each character in the input string and it will check if the character is a space (ASCII code 32). If it is a space, it means that it is going to be a new word and the new string will be emptied. Otherwise, the character is added to the current finStr variable.
   
  10. [interval.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/interval.go)
+  -  The task is to combine overlapping intervals in a given list to create a new list that contains only intervals that do not overlap with each other.
+
   -  Time Complexity: O(n log n)
    
      Space Complexity: O(n)
