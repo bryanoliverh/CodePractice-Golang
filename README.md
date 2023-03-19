@@ -268,7 +268,7 @@ so for example:
     
     Output: The two binary trees are identical.
  
-  10. [isPalindromeStr.go]( https://github.com/bryanoliverh/CodePractice-Golang/blob/main/isPalindromeStr.go)
+  12. [isPalindromeStr.go]( https://github.com/bryanoliverh/CodePractice-Golang/blob/main/isPalindromeStr.go)
   -  Check whether the given string is a palindrome or not.
 
   -  Time Complexity: O(n)
