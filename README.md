@@ -269,7 +269,7 @@ so for example:
     Output: The two binary trees are identical.
  
   10. [isPalindromeStr.go]( https://github.com/bryanoliverh/CodePractice-Golang/blob/main/isPalindromeStr.go)
-  -  The task is to combine overlapping intervals in a given list to create a new list that contains only intervals that do not overlap with each other.
+  -  Check whether the given string is a palindrome or not.
 
   -  Time Complexity: O(n)
    
