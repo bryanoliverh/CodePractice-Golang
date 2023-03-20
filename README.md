@@ -290,7 +290,7 @@ so for example:
     
     Output: not a not a not is not a palindrome.
     
-13. [isPalindromeStr.go]( https://github.com/bryanoliverh/CodePractice-Golang/blob/main/maxSubArray.go)
+13. [maxSubArray.go]( https://github.com/bryanoliverh/CodePractice-Golang/blob/main/maxSubArray.go)
 
   -  Create a function to compute the largest sum subarray of the input array.
 
