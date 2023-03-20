@@ -289,5 +289,29 @@ so for example:
     Input: "not a not a not"
     
     Output: not a not a not is not a palindrome.
-
     
+13. [isPalindromeStr.go]( https://github.com/bryanoliverh/CodePractice-Golang/blob/main/maxSubArray.go)
+
+  -  Create a function to compute the largest sum subarray of the input array.
+
+  -  Time Complexity: O(n)
+   
+     Space Complexity: O(1)
+      
+  - **Input and Output Examples:**
+    
+    **Example 1:**
+    
+    Input: [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+    
+    Output: Indices 3 to 6: 4 -1 2 1  Largest Sum Subarray: 6
+            
+    **Example 2:**
+     
+     Input: [1, 2, 3, 4, 5]
+
+     Output: Indices 0 to 4: 1 2 3 4 5 Largest Sum Subarray: 15
+
+
+
+   
