@@ -59,7 +59,7 @@ func addPerson(people *map[int]*Person, name string, age int, location string) {
 
 // Print all the people in the linked list and map
 func printPeople(people *map[int]*Person) {
-	fmt.Printf("Name of All Registered People")
+	fmt.Printf("Name of All Registered People\n")
     for id, person := range *people {
         fmt.Printf("ID: %d, Name: %s, Age: %d, Location: %s\n", id, person.name, person.age, person.location)
     }
