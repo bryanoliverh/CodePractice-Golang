@@ -312,6 +312,30 @@ so for example:
 
      Output: Indices 0 to 4: 1 2 3 4 5 Largest Sum Subarray: 15
 
+14. [printPeople.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/printPeople.go)
 
+  -  Create a function to practice using linkedlist, struct, list, and Map.
+
+  -  Time Complexity: O(n)
+   
+     Space Complexity: O(n)
+      
+  - **Input and Output Examples:**
+    
+    **Example 1:**
+        
+    Output: Name of All Registered People
+
+            ID: 1, Name: John, Age: 17, Location: New York
+            
+            ID: 2, Name: Jane, Age: 22, Location: Los Angeles
+            
+            ID: 3, Name: Bob, Age: 30, Location: Chicago
+            
+            Name of People Above 20 yo:Name: John, Age: 17
+            
+            Name of People Above 20 yo:Name: Jane, Age: 22
+            
+            Name of People Above 20 yo:Name: Bob, Age: 30
 
    
