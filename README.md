@@ -324,7 +324,9 @@ so for example:
     
     **Example 1:**
         
-    Output: Name of All Registered People
+    Output: 
+    ```     
+            Name of All Registered People
 
             ID: 1, Name: John, Age: 17, Location: New York
             
@@ -337,5 +339,4 @@ so for example:
             Name of People Above 20 yo:Name: Jane, Age: 22
             
             Name of People Above 20 yo:Name: Bob, Age: 30
-
    
