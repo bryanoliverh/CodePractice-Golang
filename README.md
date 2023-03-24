@@ -342,10 +342,10 @@ so for example:
             
 15. [longestCommonPrefix.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/longestCommonPrefix.go)
 
-  -  Create a function  to find the longest common prefix string amongst an array of strings.
+  -  Create a function to find the longest common prefix string amongst an array of strings.
 
 
-  -  Time Complexity: O(n*m)
+  -  Time Complexity: O(n*m) (m= the length of the shortest string in the strs slice for example the length of the longest common prefix, n= the total number of characters in all the strings in the strs slice).
    
      Space Complexity: O(1)
       
@@ -362,8 +362,22 @@ so for example:
     Input: strs = ["dog","racecar","car"]
     
     Output: ""
-            
-            
+ 
+ 16. [longestCommonSubstring.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/longestCommonSubstring.go)
+
+  -  Create a function to find the longest common substring string contained amongst an array of strings.
+
+  -  Time Complexity: O(m*n^2) (m= the length of the first string in the strs slice, n refers to the total number of characters in all the strings in the strs slice).
+   
+     Space Complexity: O(m) (m= the length of the first string in the strs slice)
+      
+  - **Input and Output Examples:**
+    
+    **Example 1:**
+    
+    Input: strs = ["helloeworld", "oewor", "worhelloe"]
+    
+    Output: "wor"        
             
 
    
