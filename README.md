@@ -340,8 +340,6 @@ so for example:
             
             Name of People Above 20 yo:Name: Bob, Age: 30
             
-            
-            
 15. [longestCommonPrefix.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/longestCommonPrefix.go)
 
   -  Create a function  to find the longest common prefix string amongst an array of strings.
