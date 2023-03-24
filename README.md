@@ -387,8 +387,6 @@ so for example:
    
      Space Complexity: O(n) 
 
-Given two binary strings a and b, return their sum as a binary string.
-
  - **Input and Output Examples:**
     
     **Example 1:**
