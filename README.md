@@ -290,7 +290,7 @@ so for example:
     
     Output: not a not a not is not a palindrome.
     
-13. [maxSubArray.go]( https://github.com/bryanoliverh/CodePractice-Golang/blob/main/maxSubArray.go)
+13. [maxSubArray.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/maxSubArray.go)
 
   -  Create a function to compute the largest sum subarray of the input array.
 
@@ -339,4 +339,33 @@ so for example:
             Name of People Above 20 yo:Name: Jane, Age: 22
             
             Name of People Above 20 yo:Name: Bob, Age: 30
+            
+            
+            
+15. [longestCommonPrefix.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/longestCommonPrefix.go)
+
+  -  Create a function  to find the longest common prefix string amongst an array of strings.
+
+
+  -  Time Complexity: O(n*m)
+   
+     Space Complexity: O(1)
+      
+  - **Input and Output Examples:**
+    
+    **Example 1:**
+    
+    Input: strs = ["flower","flow","flight"]
+    
+    Output: "fl"
+    
+    **Example 2:**
+    
+    Input: strs = ["dog","racecar","car"]
+    
+    Output: ""
+            
+            
+            
+
    
