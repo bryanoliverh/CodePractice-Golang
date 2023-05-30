@@ -407,7 +407,7 @@ so for example:
 
   -  The loop condition i <= len(haystack)-len(needle) ensures that the loop will only iterate up to the point where the remaining characters in haystack are greater than or equal to the length of needle. This is because there's no point in checking substrings that are shorter than the needle string. Inside the loop, haystack[i:i+len(needle)] is used to extract a substring of haystack starting from index i and with a length equal to the length of needle. This substring is then compared with the needle string using the equality operator ==. If the substring matches the needle string, the function immediately returns the value of i, indicating the index of the first occurrence of needle in haystack. If no match is found within the loop, the function will continue to the next iteration until all possible substrings of haystack have been checked. If no match is found at all, the function will reach the end and return -1 to indicate that needle is not part of haystack.
 
-  -  Time Complexity: O((N-M)M), where N is the length of haystack and M is the length of needle
+  -  Time Complexity: O((N-M)M), where N is the length of haystack and M is the length of needle.
    
      Space Complexity: O(1) 
 
@@ -424,3 +424,27 @@ so for example:
     Input: haystack = "leetcode", needle = "leeto"
     Output: -1
     Explanation: "leeto" did not occur in "leetcode", so we return -1.  
+ 
+ 19. [removeElement.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/removeElement.go)
+
+  -  Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val. Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums. Return k.
+
+  -  Time Complexity: O(n), where n is the length of nums.
+   
+     Space Complexity: O(1) 
+
+ - **Input and Output Examples:**
+    
+    **Example 1:**
+    
+    Input: nums = [3,2,2,3], val = 3
+    Output: 2, nums = [2,2,_,_]
+    Explanation: Your function should return k = 2, with the first two elements of nums being 2. It does not matter what you leave beyond the returned k (hence they are underscores).
+        
+    **Example 2:**
+    
+    Input: nums = [0,1,2,2,3,0,4,2], val = 2
+    Output: 5, nums = [0,1,4,0,3,_,_,_]
+    Explanation: Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4. Note that the five elements can be returned in any order. It does not matter what you leave beyond the returned k (hence they are underscores).
+    
+    
