@@ -446,5 +446,28 @@ so for example:
     Input: nums = [0,1,2,2,3,0,4,2], val = 2
     Output: 5, nums = [0,1,4,0,3,_,_,_]
     Explanation: Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4. Note that the five elements can be returned in any order. It does not matter what you leave beyond the returned k (hence they are underscores).
+
+20. [reverseInt.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/reverseInt.go)
+
+  -  Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0. Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
+
+  -  Time Complexity: O(n), where n is the length of nums.
+   
+     Space Complexity: O(1) 
+
+ - **Input and Output Examples:**
     
+    **Example 1:**
     
+    Input: x = 123
+    Output: 321
+    
+    **Example 2:**
+    
+    Input: x = -123
+    Output: -321
+    
+    **Example 3:**
+    
+    Input: x = 120
+    Output: 21
