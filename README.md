@@ -1,4 +1,4 @@
-# List of some of my LeetCode, HackerRank, and other practice codes!
+# List of some of my LeetCode, HackerRank, and other challenges!
 1. [compress.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/compress.go)
 
  - Time Complexity: O(n)
