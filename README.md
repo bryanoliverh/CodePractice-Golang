@@ -471,3 +471,32 @@ so for example:
     
     Input: x = 120
     Output: 21
+    
+ 21. [removeNthFromEnd.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/removeNthFromEnd.go)
+
+  -  Given the head of a linked list, remove the nth node from the end of the list and return its head.
+
+  -  By using &ListNode{Next: head}, you create a new ListNode instance with its Next field pointing to the head node. This way, dummy becomes a pointer to this new node, and its Next field connects to the original list starting from the head node.
+
+  -  Time Complexity: O(N), N is the number of nodes in the linked list
+   
+     Space Complexity: O(1) 
+
+ - **Input and Output Examples:**
+    
+    **Example 1:**
+    
+    Input: head = [1,2,3,4,5], n = 2
+    Output: [1,2,3,5]
+    
+    **Example 2:**
+    
+    Input: head = [1], n = 1
+    Output: []
+    
+    **Example 3:**
+    
+    Input: head = [1,2], n = 1
+    Output: [1]
+    
+    
