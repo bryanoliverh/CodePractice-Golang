@@ -401,3 +401,26 @@ so for example:
     
     Output: "10101"   
 
+ 18. [indexFirstOccurence.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/indexFirstOccurence.go)
+
+  -  Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+  -  The loop condition i <= len(haystack)-len(needle) ensures that the loop will only iterate up to the point where the remaining characters in haystack are greater than or equal to the length of needle. This is because there's no point in checking substrings that are shorter than the needle string. Inside the loop, haystack[i:i+len(needle)] is used to extract a substring of haystack starting from index i and with a length equal to the length of needle. This substring is then compared with the needle string using the equality operator ==. If the substring matches the needle string, the function immediately returns the value of i, indicating the index of the first occurrence of needle in haystack. If no match is found within the loop, the function will continue to the next iteration until all possible substrings of haystack have been checked. If no match is found at all, the function will reach the end and return -1 to indicate that needle is not part of haystack
+
+  -  Time Complexity: O((N-M)M), where N is the length of haystack and M is the length of needle
+   
+     Space Complexity: O(1) 
+
+ - **Input and Output Examples:**
+    
+    **Example 1:**
+    
+    Input: haystack = "sadbutsad", needle = "sad"
+    Output: 0
+    Explanation: "sad" occurs at index 0 and 6. The first occurrence is at index 0, so we return 0.  
+        
+    **Example 2:**
+    
+    Input: haystack = "leetcode", needle = "leeto"
+    Output: -1
+    Explanation: "leeto" did not occur in "leetcode", so we return -1.  
