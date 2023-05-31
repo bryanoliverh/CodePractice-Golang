@@ -554,5 +554,35 @@ so for example:
     Input: height = [1,1]
     Output: 1
     
+24. [addNextNodeWithValue.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/addNextNodeWithValue.go)
+
+  -  Golang code that adds a new node with a value of 5 (as an example) as the next node of any node with a value of 3 (as an example) in a linked list
+  
+  -  Time Complexity: O(N), where n is the number of nodes in the linked list
+   
+     Space Complexity: O(1)
+     
+  
+  - **Input and Output Examples:**
+    
+    **Example 1:**
+    
+    Input:
+    Linked list: 1 -> 2 -> 3 -> 4 -> 5
+    Target value: 3
+    New value: 5
+
+    Output:
+    Linked list: 1 -> 2 -> 3 -> 5 -> 4 -> 5
+
+    **Example 2:**
+    
+    Input:
+    Linked list: 3 -> 3 -> 3 -> 3 -> 3
+    Target value: 3
+    New value: 5
+
+    Output:
+    Linked list: 3 -> 5 -> 3 -> 3 -> 3 -> 3
 
 
