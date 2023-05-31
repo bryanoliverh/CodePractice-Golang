@@ -528,3 +528,31 @@ so for example:
     Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
     Output: [8,9,9,9,0,0,0,1] 
 
+
+23. [maxArea.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/maxArea.go)
+
+  -  You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]). Find two lines that together with the x-axis form a container, such that the container contains the most water. Return the maximum amount of water a container can store. Notice that you may not slant the container.
+
+  -  We search the minimum of left and right because the container can only hold water at the height of the minimum, for example left = 6, right = 8, the area would be 6 * the x axis which is the difference between both indexes.
+
+  - The min and max functions are utility functions used to find the minimum and maximum values between two integers, respectively.
+
+  -  Time Complexity: O(N), where N is the length of the height
+   
+     Space Complexity: O(1)
+     
+ - **Input and Output Examples:**
+    
+    **Example 1:**
+    
+    Input: height = [1,8,6,2,5,4,8,3,7]
+    Output: 49
+    Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
+
+    **Example 2:**
+    
+    Input: height = [1,1]
+    Output: 1
+    
+
+
