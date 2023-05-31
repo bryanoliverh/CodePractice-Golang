@@ -500,3 +500,31 @@ so for example:
     Output: [1]
     
     
+22. [addTwoNumbers.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/addTwoNumbers.go)
+
+  -  You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list. You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+  -  In the given code snippet, dummy is a pointer to a new instance of ListNode, which acts as a dummy head node for the resulting linked list. It is initially empty, meaning it doesn't contain any value. current is another pointer that initially points to the dummy node. It is used to keep track of the current node in the resulting linked list while iterating through the input lists l1 and l2. By using a dummy head node, we can easily handle the edge case of an empty resulting linked list without needing special checks. The current pointer allows us to append new nodes to the end of the resulting linked list by updating its Next field with a new node.
+
+  -  Time Complexity: O(max(N, M)), where N and M are the lengths of the input linked lists l1 and l2 respectively
+   
+     Space Complexity: O(max(N, M))
+     
+ - **Input and Output Examples:**
+    
+    **Example 1:**
+    
+    Input: l1 = [2,4,3], l2 = [5,6,4]
+    Output: [7,0,8]
+    Explanation: 342 + 465 = 807.
+    
+    **Example 2:**
+    
+    Input: l1 = [0], l2 = [0]
+    Output: [0]
+    
+    **Example 3:**
+    
+    Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+    Output: [8,9,9,9,0,0,0,1] 
+
