@@ -585,7 +585,7 @@ so for example:
     Output:
     Linked list: 3 -> 5 -> 3 -> 3 -> 3 -> 3
 
-24. [swapPairs.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/swapPairs.go)
+25. [swapPairs.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/swapPairs.go)
 
   -  Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
   
@@ -612,3 +612,28 @@ so for example:
     
     Input: head = [1]
     Output: [1]
+    
+ 26. [deleteDuplicatesWithSorted.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/deleteDuplicatesWithSorted.go)
+
+  -  Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
+  
+  -  Time Complexity: O(n log n) in the average and worst cases, where n is the number of nodes in the linked list. 
+   
+     Space Complexity: O(N), where n is the number of nodes in the linked list
+     
+  
+  - **Input and Output Examples:**
+    
+    **Example 1:**
+    
+    Input: head = [1,1,2]
+    Output: [1,2]
+
+    **Example 2:**
+    
+    Input: head = [1,1,2,3,3]
+    Output: [1,2,3]
+
+
+    
+    
