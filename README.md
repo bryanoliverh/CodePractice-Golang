@@ -1,4 +1,4 @@
-# List of some of my results from my weekly exercise from LeetCode, HackerRank, and other challenges!
+# List of some of my results of my weekly exercise from LeetCode, HackerRank, and other challenges!
 1. [compress.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/compress.go)
 
  - Time Complexity: O(n)
