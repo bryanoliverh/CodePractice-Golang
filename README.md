@@ -616,6 +616,8 @@ so for example:
  26. [deleteDuplicatesWithSorted.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/deleteDuplicatesWithSorted.go)
 
   -  Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
+
+  -  Using the merge sort algorithm, it will find the middle part of the linked list by advancing fast two nodes at a time and slow one node at a time. Furthermore, it will sort the first half and the second half. Moreover, it will then merge both of the halves together.
   
   -  Time Complexity: O(n log n) in the average and worst cases, where n is the number of nodes in the linked list. 
    
