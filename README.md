@@ -588,7 +588,8 @@ so for example:
 24. [swapPairs.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/swapPairs.go)
 
   -  Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
-
+  
+  -  After each iteration, the carrier will move to the first, which means it is going to start for the next pair.
   
   -  Time Complexity: O(N), where n is the number of nodes in the linked list
    
