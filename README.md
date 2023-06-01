@@ -657,4 +657,31 @@ so for example:
     Input: head = [], val = 1
     Output: []
 
+ 27. [reverseList.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/reverseList.go)
+
+  -  Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+
+  -  nextnode := current.Next: This line creates a new variable nextnode and assigns it the value of the next node after the current node. It's essentially capturing the reference to the next node before we modify the current.Next pointer. 
+  -  current.Next = prev: This line reverses the Next pointer of the current node and points it to the prev node. This effectively changes the direction of the linked list, making the current node point to its previous node.
+  
+  -  prev = current: This line updates the prev node to be the current node. Since we're moving forward in the linked list, the current node will become the previous node in the next iteration.
+  
+  -  current = nextnode: This line updates the current node to be the nextnode, which was captured in the first line. By moving current to the next node, we continue iterating through the linked list.
+  
+  -  Time Complexity: O(n), where n is the number of nodes in the linked list
+   
+     Space Complexity: O(1)
+     
+ - **Input and Output Examples:**
+    
+    **Example 1:**
+    
+    Input: head = [1,2,3,4,5]
+    Output: [5,4,3,2,1]
+    
+    **Example 2:**
+    
+    Input: head = [1,2]
+    Output: [2,1]
+    
     
