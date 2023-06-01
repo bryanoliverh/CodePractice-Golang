@@ -636,7 +636,7 @@ so for example:
     Input: head = [1,1,2,3,3]
     Output: [1,2,3]
 
-26. [removeElements.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/removeElements.go)
+27. [removeElements.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/removeElements.go)
 
   -  Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
 
@@ -657,7 +657,7 @@ so for example:
     Input: head = [], val = 1
     Output: []
 
- 27. [reverseList.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/reverseList.go)
+ 28. [reverseList.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/reverseList.go)
 
   -  Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
 
