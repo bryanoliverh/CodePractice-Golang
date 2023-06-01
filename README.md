@@ -416,13 +416,17 @@ so for example:
     **Example 1:**
     
     Input: haystack = "sadbutsad", needle = "sad"
+    
     Output: 0
+    
     Explanation: "sad" occurs at index 0 and 6. The first occurrence is at index 0, so we return 0.  
         
     **Example 2:**
     
     Input: haystack = "leetcode", needle = "leeto"
+    
     Output: -1
+    
     Explanation: "leeto" did not occur in "leetcode", so we return -1.  
  
  19. [removeElement.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/removeElement.go)
@@ -438,13 +442,17 @@ so for example:
     **Example 1:**
     
     Input: nums = [3,2,2,3], val = 3
+    
     Output: 2, nums = [2,2,_,_]
+    
     Explanation: Your function should return k = 2, with the first two elements of nums being 2. It does not matter what you leave beyond the returned k (hence they are underscores).
         
     **Example 2:**
     
     Input: nums = [0,1,2,2,3,0,4,2], val = 2
+    
     Output: 5, nums = [0,1,4,0,3,_,_,_]
+    
     Explanation: Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4. Note that the five elements can be returned in any order. It does not matter what you leave beyond the returned k (hence they are underscores).
 
 20. [reverseInt.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/reverseInt.go)
@@ -460,16 +468,19 @@ so for example:
     **Example 1:**
     
     Input: x = 123
+    
     Output: 321
     
     **Example 2:**
     
     Input: x = -123
+    
     Output: -321
     
     **Example 3:**
     
     Input: x = 120
+    
     Output: 21
     
  21. [removeNthFromEnd.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/removeNthFromEnd.go)
@@ -487,16 +498,19 @@ so for example:
     **Example 1:**
     
     Input: head = [1,2,3,4,5], n = 2
+    
     Output: [1,2,3,5]
     
     **Example 2:**
     
     Input: head = [1], n = 1
+    
     Output: []
     
     **Example 3:**
     
     Input: head = [1,2], n = 1
+    
     Output: [1]
     
     
@@ -515,17 +529,21 @@ so for example:
     **Example 1:**
     
     Input: l1 = [2,4,3], l2 = [5,6,4]
+    
     Output: [7,0,8]
+    
     Explanation: 342 + 465 = 807.
     
     **Example 2:**
     
     Input: l1 = [0], l2 = [0]
+    
     Output: [0]
     
     **Example 3:**
     
     Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+    
     Output: [8,9,9,9,0,0,0,1] 
 
 
@@ -546,12 +564,15 @@ so for example:
     **Example 1:**
     
     Input: height = [1,8,6,2,5,4,8,3,7]
+    
     Output: 49
+    
     Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
 
     **Example 2:**
     
     Input: height = [1,1]
+    
     Output: 1
     
 24. [addNextNodeWithValue.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/addNextNodeWithValue.go)
@@ -583,6 +604,7 @@ so for example:
     New value: 5
 
     Output:
+    
     Linked list: 3 -> 5 -> 3 -> 3 -> 3 -> 3
 
 25. [swapPairs.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/swapPairs.go)
@@ -601,16 +623,19 @@ so for example:
     **Example 1:**
     
     Input: head = [1,2,3,4]
+    
     Output: [2,1,4,3]
 
     **Example 2:**
     
     Input: head = []
+    
     Output: []
 
     **Example 3:**
     
     Input: head = [1]
+    
     Output: [1]
     
  26. [deleteDuplicatesWithSorting.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/deleteDuplicatesWithSorting.go)
@@ -629,11 +654,13 @@ so for example:
     **Example 1:**
     
     Input: head = [1,1,2]
+    
     Output: [1,2]
 
     **Example 2:**
     
     Input: head = [1,1,2,3,3]
+    
     Output: [1,2,3]
 
 27. [removeElements.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/removeElements.go)
@@ -650,11 +677,13 @@ so for example:
     **Example 1:**
     
     Input: head = [1,2,6,3,4,5,6], val = 6
+    
     Output: [1,2,3,4,5]
     
     **Example 2:**
     
     Input: head = [], val = 1
+    
     Output: []
 
  28. [reverseList.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/reverseList.go)
@@ -677,11 +706,49 @@ so for example:
     **Example 1:**
     
     Input: head = [1,2,3,4,5]
+    
     Output: [5,4,3,2,1]
     
     **Example 2:**
     
     Input: head = [1,2]
+    
     Output: [2,1]
+   
+ 29. [getIntersectionNode.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/getIntersectionNode.go)
+
+  -  Given the heads of two singly linked-lists headA and headB, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null. The test cases are generated such that there are no cycles anywhere in the entire linked structure. Note that the linked lists must retain their original structure after the function returns.
+
+  -  Custom Judge:
+```
+     The inputs to the judge are given as follows (your program is not given these inputs):
+
+     intersectVal - The value of the node where the intersection occurs. This is 0 if there is no intersected node.
+     listA - The first linked list.
+     listB - The second linked list.
+     skipA - The number of nodes to skip ahead in listA (starting from the head) to get to the intersected node.
+     skipB - The number of nodes to skip ahead in listB (starting from the head) to get to the intersected node.
+     The judge will then create the linked structure based on these inputs and pass the two heads, headA and headB to your program. If you correctly return the intersected node, then your solution will be accepted.
+```
+  
+  -  Time Complexity: O(m + n), where m and n are the lengths of the input linked lists headA and headB
+   
+     Space Complexity: O(1)
+     
+ - **Input and Output Examples:**
     
+    **Example 1:**
     
+    Input: intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3
+    
+    Output: Intersected at '8'
+    
+    Explanation: The intersected node's value is 8 (note that this must not be 0 if the two lists intersect). From the head of A, it reads as [4,1,8,4,5]. From the head of B, it reads as [5,6,1,8,4,5]. There are 2 nodes before the intersected node in A; There are 3 nodes before the intersected node in B. Note that the intersected node's value is not 1 because the nodes with value 1 in A and B (2nd node in A and 3rd node in B) are different node references. In other words, they point to two different locations in memory, while the nodes with value 8 in A and B (3rd node in A and 4th node in B) point to the same location in memory.
+    
+    **Example 2:**
+    
+    Input: intersectVal = 2, listA = [1,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1
+    
+    Output: Intersected at '2'
+    
+    Explanation: The intersected node's value is 2 (note that this must not be 0 if the two lists intersect). From the head of A, it reads as [1,9,1,2,4]. From the head of B, it reads as [3,2,4]. There are 3 nodes before the intersected node in A; There are 1 node before the intersected node in B.
