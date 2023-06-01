@@ -636,6 +636,25 @@ so for example:
     Input: head = [1,1,2,3,3]
     Output: [1,2,3]
 
+26. [removeElements.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/removeElements.go)
 
+  -  Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+
+  -  By using a separate current variable to traverse the linked list and updating current.Next to skip the nodes with the target value, we can effectively removing the undesired nodes while preserving the reference to the original head. This way, we can return the modified linked list correctly at the end.
+  
+  -  Time Complexity: O(n), where n is the number of nodes in the linked list
+   
+     Space Complexity: O(1)
+ - **Input and Output Examples:**
     
+    **Example 1:**
+    
+    Input: head = [1,2,6,3,4,5,6], val = 6
+    Output: [1,2,3,4,5]
+    
+    **Example 2:**
+    
+    Input: head = [], val = 1
+    Output: []
+
     
