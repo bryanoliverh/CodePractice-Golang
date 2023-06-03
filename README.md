@@ -1,6 +1,6 @@
 # List of some of my results of my weekly exercise from LeetCode, HackerRank, and other challenges!
 
-Please do feel free to ask questions or any inquiries about the code or the logic behind the code through creating issues in this repo or by email.
+Please do feel free to ask questions or any inquiries about the code or the logic behind the code through creating issues in this repo or by email. The short summary of these codes are written below:
 
 1. [compress.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/compress.go)
 
