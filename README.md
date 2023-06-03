@@ -782,5 +782,27 @@ so for example:
     
     Output: [2,0,1]
 
+ 31. [generateParenthesis.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/generateParenthesis.go)
+
+  -  Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+  -  The code implements a backtracking algorithm to generate all valid combinations of well-formed parentheses. It starts with an empty string and recursively explores all possible choices for adding an opening or closing parenthesis. At each step, it keeps track of the count of open and close parentheses to ensure the generated string remains valid. The base case is reached when the length of the current string reaches 2n (where n is the given input), and at that point, the current combination is added to the result. The algorithm explores all possible combinations by backtracking and returns the final result, which is a list of valid parentheses combinations.
+  
+  -  Time Complexity: O(4^n / sqrt(n)), where n is the input parameter
    
+     Space Complexity: O(n), where n is the input parameter
+     
+ - **Input and Output Examples:**
+    
+    **Example 1:**
+    
+    Input: n = 3
+    
+    Output: ["((()))","(()())","(())()","()(())","()()()"]
+
+    **Example 2:**
+    
+    Input: n = 1
+    
+    Output: ["()"] 
  
