@@ -752,3 +752,32 @@ so for example:
     Output: Intersected at '2'
     
     Explanation: The intersected node's value is 2 (note that this must not be 0 if the two lists intersect). From the head of A, it reads as [1,9,1,2,4]. From the head of B, it reads as [3,2,4]. There are 3 nodes before the intersected node in A; There are 1 node before the intersected node in B.
+    
+    
+ 30. [rotateRight.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/rotateRight.go)
+
+  -  Given the head of a linked list, rotate the list to the right by k places.
+
+  -  The code rotates a linked list to the right by k places by connecting the tail to the head to form a circular list, finding the new tail and new head positions, and breaking the circular list at the new tail position.
+  
+  -  Time Complexity: O(n), where n is the number of nodes in the linked list
+   
+     Space Complexity: O(1)
+     
+ - **Input and Output Examples:**
+    
+    **Example 1:**
+    
+    Input: head = [1,2,3,4,5], k = 2
+    
+    Output: [4,5,1,2,3]
+
+    
+    **Example 2:**
+    
+    Input: head = [0,1,2], k = 4
+    
+    Output: [2,0,1]
+
+   
+ 
