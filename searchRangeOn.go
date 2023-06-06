@@ -1,4 +1,4 @@
-func searchRange(nums []int, target int) []int {
+func searchRangeOn(nums []int, target int) []int {
 	output := []int{}
 	finoutput := make([]int, 2)
 
