@@ -870,7 +870,7 @@ so for example:
    
    Output: [-1,-1]
 
-34. [searchRange.go]([https://github.com/bryanoliverh/CodePractice-Golang/blob/main/searchRange.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/searchRange.go))
+34. [searchRange.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/searchRange.go)
 
   -  Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value. If target is not found in the array, return [-1, -1]. You must write an algorithm with O(log n) runtime complexity.
   
