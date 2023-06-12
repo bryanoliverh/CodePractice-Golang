@@ -901,20 +901,18 @@ so for example:
    Output: [-1,-1]
 
 
-34. [singleNumber.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/singleNumber.go)
+35. [singleNumber.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/singleNumber.go)
 
   -  Given a non-empty array of integers nums, every element appears twice except for one. Find that single one. You must implement a solution with a linear runtime complexity and use only constant extra space.
 
   -   The code is based on the XOR (exclusive OR) operation. XOR returns true (1) if the number of true inputs is odd, and false (0) if the number of true inputs is even. In the given code, we initialize the result variable to 0. By iterating through each element in the nums array, we perform XOR between the current element and the result. This operation has the property that XORing a number with itself results in 0. Therefore, when the same number appears twice, the XOR operation cancels them out, leaving 0 as the result. However, when a number appears only once, the XOR operation with 0 effectively "stores" that number in the result. As we continue iterating through the array, the duplicates cancel out, and the result variable eventually contains the single number that appears only once. Finally, we return the result, which represents the single number that appears only once in the given array.
 
   -  In the case of 2 XOR 4, the binary representation of these numbers are:
-     
+     ```
      2: 0010
-     
-     4: 0100
-     
+     4: 0100   
      0110
-
+     ```
      The resulting binary representation is 0110, which is equal to 6 in decimal.
 
   - Time Complexity: O(n), where n is the length of the input nums array.
