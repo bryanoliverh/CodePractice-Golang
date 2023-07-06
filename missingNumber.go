@@ -1,10 +1,12 @@
 func missingNumber(nums []int) int {
-    n := len(nums)
-    totalSum := n * (n + 1) / 2
+	a := len(nums)
 
-    for _, num := range nums {
-        totalSum -= num
-    }
+	totalSum := (a * (a+1))/2
+	realSum := 0
+	for _, num in range nums{
+	realSum+= num
+	}
 
-    return totalSum
+	return totalSum - realSum
+
 }
