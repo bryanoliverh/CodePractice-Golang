@@ -976,13 +976,13 @@ so for example:
    
    Explanation: n = 9 since there are 9 numbers, so all numbers are in the range [0,9]. 8 is the missing number in the range since it does not appear in nums.
 
-36. [findPeakElement.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/findPeakElement.go)
+37. [findPeakElement.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/findPeakElement.go)
 
   - A peak element is an element that is strictly greater than its neighbors. Given a 0-indexed integer array nums, find a peak element, and return its index. If the array contains multiple peaks, return the index to any of the peaks. You may imagine that nums[-1] = nums[n] = -∞. In other words, an element is always considered to be strictly greater than a neighbor that is outside the array. You must write an algorithm that runs in O(log n) time.
 
   - At the end of the loop, left and right will have the same value.
 
-  - Time Complexity: O(n), where n is the length of the input array.
+  - Time Complexity: O(log n), where n is the length of the input array.
    
      Space Complexity: O(1)
      
