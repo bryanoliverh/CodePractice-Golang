@@ -980,6 +980,9 @@ so for example:
 
   - A peak element is an element that is strictly greater than its neighbors. Given a 0-indexed integer array nums, find a peak element, and return its index. If the array contains multiple peaks, return the index to any of the peaks. You may imagine that nums[-1] = nums[n] = -∞. In other words, an element is always considered to be strictly greater than a neighbor that is outside the array. You must write an algorithm that runs in O(log n) time.
 
+  - The logic is based on binary search. The logic works based on the observation that, in any given subarray, if the element at the middle index mid is greater than the element immediately to its right (nums[mid] > nums[mid+1]), it implies that a peak element must exist either at index mid or to the left of it. This is because the sequence of elements leading up to mid is either increasing or non-decreasing, and then it starts decreasing at mid. Therefore, there must be a peak element in the left half of the subarray. 
+
+
   - At the end of the loop, left and right will have the same value.
 
   - Time Complexity: O(log n), where n is the length of the input array.
