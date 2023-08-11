@@ -1007,5 +1007,35 @@ so for example:
 
    Explanation: Your function can return either index number 1 where the peak element is 2, or index number 5 where the peak element is 6.
 
-   
+ 38. [validParentheses.go](https://github.com/bryanoliverh/CodePractice-Golang/blob/main/validParentheses.go)
 
+  - Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if:
+    - Open brackets must be closed by the same type of brackets.
+    - Open brackets must be closed in the correct order.
+    - Every close bracket has a corresponding open bracket of the same type.
+
+  - At the end of the loop, left and right will have the same value.
+  
+  - Time Complexity: O(n), where n is the length of the input string.
+   
+    Space Complexity: O(1)
+  
+  - **Input and Output Examples:**
+  
+    **Example 1:**
+    
+    Input: s = "()"
+    
+    Output: true
+    
+    **Example 2:**
+    
+    Input: s = "()[]{}"
+    
+    Output: true
+    
+    **Example 3:**
+    
+    Input: s = "(]"
+    
+    Output: false
