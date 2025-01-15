@@ -1,3 +1,5 @@
+
+
 func minimizeXor(num1 int, num2 int) int {
 	// Count the number of set bits in num2
 	setBitsNum2 := bits.OnesCount(uint(num2))
