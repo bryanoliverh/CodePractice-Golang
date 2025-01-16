@@ -31,3 +31,16 @@ func minimizeXor(num1 int, num2 int) int {
 
 	return result
 }
+
+func countSetBits(num int) int {
+	count := 0
+	//The loop's purpose is to examine each bit of num, one at a time, from least significant to most significant.
+
+	for num > 0 {
+		//num & 1 is a bitwise AND operation that extracts the least significant bit (LSB) of num. (the most right bit)
+		count += num & 1
+		// num >>= 1 shifts the bits of num one position to the right. This effectively discards the LSB that was just examined and shifts the next bit into the LSB position.
+		num >>= 1
+	}
+	return count
+}
